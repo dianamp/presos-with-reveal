@@ -49,21 +49,22 @@
 	</section>
 
 	<section>
+	  <h2 style="text-align:left">Optimization</h2>
+	  <br>
+	  <div class="fragment">
+	    <p style="font-size:150%">minimize cost</p>
+	    <p style="font-size:150%">subject to constraints</p>
+	  </div>
+	</section>
+
+	<section>
 	  <h2>Traveling Salesman Problem</h2>
 	  <img src="images/us_capitals.jpg">
 	  <aside class="notes">Who is familiar with the TSP? Is this an easy problem to solve? This very natural problem is computationally intractable. This is an optimization problem, broadly: trying to minimize a cost subject to constraints.</aside>
 	</section>
 
-	<section>
-	  <h2>Optimization Problem</h2>
-	  <p> minimize cost</p>
-	  <p> subject to constraints</p>
-	</section>
-
 	<section data-background="#9370DB">
-	  <h1>Does</h1>
-	  <h1>P = NP</h1>
-	  <h1>?</h1>
+	  <h1>P = NP?</h1>
 	  <aside class="notes">Intractable...unless P=NP. Biggest open problem in computer science</aside>
 	</section>
 
@@ -75,6 +76,8 @@
 
 	<section>
 	  <h2>Linear Regression</h2>
+	  http://scikit-learn.org/stable/auto_examples/linear_model/plot_ols.html
+	  http://www4.stat.ncsu.edu/~boos/var.select/diabetes.html
 	  <aside class="notes">
 	    <p>Have you ever wondered why machine learning algorithms are structured the way they are?</p>
 	    <p>Take regression. To do a regression we solve an optimization problem: find the line that fits the data points the best. "fits" is the sum of squared error costs.</p>
@@ -82,8 +85,8 @@
 	</section>
 
 	<section>
-	  <h2>This problems belongs to P!</h2>
-	  <h3>It is a convex optimization problem</h3>
+	  <h2>This problem is “tractable”!</h2>
+	  <h3 class="fragment">convex optimization problem</h3>
 	</section>
 
 	<section>
@@ -95,7 +98,7 @@
 	</section>
 
 	<section>
-	  <img src="images/fotolia_88915493.jpg">
+	  <img class="stretch" src="https://chrishildrew.files.wordpress.com/2013/09/whisper-in-ear.jpg">
 	  <aside class="notes">Here's a secret: in optimization, we tackle and solve non-convex, "hard" problems every single day. <p>"There's another way</p></aside>
 	</section>
 
@@ -111,7 +114,7 @@
 	</section>
 
 	<section>
-	  <h1>Wait a minute</h1>
+	  <img class="stretch" src="images/not_sure_if_n_np.jpg">
 	  <aside class="notes">Didn't I just prove that P=NP? These algorithms can't always find a solution quickly. But 1) in practise they often do, 2) you know how close you are to optimal along the way.</aside>
 	</section>
 
