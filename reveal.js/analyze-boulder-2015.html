@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Computational Limits in Machine Learning</title>
+
+    <meta name="description" content="A talk for the October 2015 edition of Analyze Boulder, focused on intractability in machine learning, and the relationship between machine learning, optimization, and P=NP">
+    <meta name="author" content="Diana Pfeil">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+	<section data-background="#9370DB">
+	  <h2 style="color:white">Computational Limits in Machine Learning</h2>
+	  <br>
+	  <br>
+	  <h3 style="color:white">Diana Pfeil / @dianam</h3>
+	  <h3 style="color:white">Analyze Boulder, October 2015</h3>
+	</section>
+
+	<section>
+	  <h2>Traveling Salesman Problem</h2>
+	  <img src="images/us_capitals.jpg">
+	  <aside class="notes">Who is familiar with the TSP? Is this an easy problem to solve? This very natural problem is computationally intractable. This is an optimization problem, broadly: trying to minimize a cost subject to constraints.</aside>
+	</section>
+
+	<section>
+	  <h2>Optimization Problem</h2>
+	  <p> minimize cost</p>
+	  <p> subject to constraints</p>
+	</section>
+
+	<section data-background="#9370DB">
+	  <h1>Does</h1>
+	  <h1>P = NP</h1>
+	  <h1>?</h1>
+	  <aside class="notes">Intractable...unless P=NP. Biggest open problem in computer science</aside>
+	</section>
+
+	<section>
+	  <h1>Ummmmmm...</h1>
+	  <h1>data?</h1>
+	  <aside class="notes">How does this relate to machine learning?</aside>
+	</section>
+
+	<section>
+	  <h2>Linear Regression</h2>
+	  <aside class="notes">
+	    <p>Have you ever wondered why machine learning algorithms are structured the way they are?</p>
+	    <p>Take regression. To do a regression we solve an optimization problem: find the line that fits the data points the best. "fits" is the sum of squared error costs.</p>
+	  </aside>
+	</section>
+
+	<section>
+	  <h2>This problems belongs to P!</h2>
+	  <h3>It is a convex optimization problem</h3>
+	</section>
+
+	<section>
+	  <h2>Support Vector Machine</h2>
+	</section>
+
+	<section>
+	  <h2>Logistic Regression</h2>
+	</section>
+
+	<section>
+	  <img src="images/fotolia_88915493.jpg">
+	  <aside class="notes">Here's a secret: in optimization, we tackle and solve non-convex, "hard" problems every single day. <p>"There's another way</p></aside>
+	</section>
+
+	<section>
+	  <h2>Traveling Salesman Problem</h2>
+	  <img src="images/us_capitals.jpg">
+	 </section>
+
+	<section>
+	  <h2>Optimal Solution</h2>
+	  <img src="images/us_capitals_tsp.jpg">
+	  <aside class="notes">Did we solve it brute-force? Noooo. This is impractical for even 20 cities. For 100 cities, the number of permutation to examine is more than the number of atoms in the universe is estimated at under 4 x 10^81. But, the best current techniques can solve for 85,000 cities to provable optimality using a technique called branch and cut. Phew for UPS!</aside>
+	</section>
+
+	<section>
+	  <h1>Wait a minute</h1>
+	  <aside class="notes">Didn't I just prove that P=NP? These algorithms can't always find a solution quickly. But 1) in practise they often do, 2) you know how close you are to optimal along the way.</aside>
+	</section>
+
+	<section>
+	  <div>
+	    <blockquote style="font-size:150%;color:purple">
+	      To solve complicated AI tasks, machine learning will have to go non-convex
+	    </blockquote>
+	    - Yann LeCun
+	  </div>
+	  <div class="fragment">
+	    <blockquote style="font-size:150%;color:purple">
+	      Convex Schmonvex
+	    </blockquote>
+	    -Yann LeCunn
+	  </div>
+	  <aside class="notes">Have you tried acoustic modeling in speech with a convex loss?</aside>
+	</section>
+
+	<section>
+	  <h2 style="text-align:left">Speech Recognition</h2>
+	  <h2 style="text-align:left">Handwriting Recognition</h2>
+	  <h2 style="text-align:left">Computer Vision / Cat Videos</h2>
+	  <aside class="notes">HMMs and Deep learning</aside>
+	</section>
+
+	<section>
+	  <img src="images/cat_raising_hand.jpg">
+	  <p style="font-size:small;text-align:center">
+	    Source: https://c2.staticflickr.com/2/1162/1415120191_2aef20cb08_b.jpg</p>
+	  <h2 style="color:violet">@dianam</h2>
+	</section>
+	
+	<section data-background="#9370DB">
+	  <h2 style="color:white">Questions?</h2>
+	  <br>
+	  <h3 style="color:white">/ @dianam</h3>
+	</section>
+
+		<section>
+	  <p>P=NP: millenium problem. Traveling Salesperson problem. Maybe: even or odd number of edges</p>
+	  <p>How does this relate to machine learning?</p>
+	  <p>Have you ever wondered by machine learning algorithms are structured the way they are?</p>
+	  <p>For example: linear regression. or logistic regression</p>
+	  <p>Well, if logistic regression looked like this, it would be non-convex</p>
+	  <p>Regression: add and remove features. Why can't we just find the features that give us the best fit?</p>
+	  <p>SVM, logistic regression: they are formulated that way so that they are convex</p>
+	  <p>convex means: local optimum is a global one.</p>
+	  <p>But in optimization, we tackle non-convex problems all the time! How does the UPS delivery person deliver packages in a reasonable manner? UPS solves a huge version of TSP! They know how close to opimal they are</p>
+	  <p>Deep learning involves a non-convex loss. Yann LaCunn quote about loss.<p>
+	  <p>Feature selection is non-convex<p>
+	</section>
+
+	<section>
+	  <p>TODO: read deep learning section in Seb R book.</p>
+	</section>
+
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      slideNumber: true,
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+      fragments: true,
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+      // Optional reveal.js plugins
+      dependencies: [
+      { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/zoom-js/zoom.js', async: true },
+      { src: 'plugin/notes/notes.js', async: true },
+      { src: 'plugin/math/math.js', async: true }
+      ]
+      });
+
+    </script>
+
+  </body>
+</html>
