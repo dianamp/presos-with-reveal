@@ -49,9 +49,9 @@
 	</section>
 
 	<section>
-	  <h2 style="text-align:left">Optimization</h2>
+	  <h2 style="text-align:center">Optimization</h2>
 	  <br>
-	  <div class="fragment">
+	  <div class="fragment" style="padding-left: 8em">
 	    <p style="font-size:150%">minimize cost</p>
 	    <p style="font-size:150%">subject to constraints</p>
 	  </div>
@@ -69,15 +69,13 @@
 	</section>
 
 	<section>
-	  <h1>Ummmmmm...</h1>
-	  <h1>data?</h1>
+	  <h1 style="color:#9370DB">Back to Data</h1>
 	  <aside class="notes">How does this relate to machine learning?</aside>
 	</section>
 
 	<section>
 	  <h2>Linear Regression</h2>
-	  http://scikit-learn.org/stable/auto_examples/linear_model/plot_ols.html
-	  http://www4.stat.ncsu.edu/~boos/var.select/diabetes.html
+	  <img class="stretch" src="images/cat_regression2.jpg">
 	  <aside class="notes">
 	    <p>Have you ever wondered why machine learning algorithms are structured the way they are?</p>
 	    <p>Take regression. To do a regression we solve an optimization problem: find the line that fits the data points the best. "fits" is the sum of squared error costs.</p>
@@ -86,11 +84,17 @@
 
 	<section>
 	  <h2>This problem is “tractable”!</h2>
-	  <h3 class="fragment">convex optimization problem</h3>
+	  <h3 class="fragment" style="color:#9370DB">convex optimization problem</h3>
 	</section>
 
 	<section>
 	  <h2>Support Vector Machine</h2>
+	  <img class="stretch" src="images/svm_example.jpg">
+	</section>
+
+	<section>
+	  <h2>Support Vector Machine</h2>
+	  Problem setup
 	</section>
 
 	<section>
@@ -120,16 +124,16 @@
 
 	<section>
 	  <div>
-	    <blockquote style="font-size:150%;color:purple">
-	      To solve complicated AI tasks, machine learning will have to go non-convex
+	    <blockquote style="font-size:150%;color:#9370DB">
+	      To solve complicated AI tasks, machine learning will have to go non-convex.
 	    </blockquote>
-	    - Yann LeCun
+	    —Yann LeCun
 	  </div>
 	  <div class="fragment">
-	    <blockquote style="font-size:150%;color:purple">
-	      Convex Schmonvex
+	    <blockquote style="font-size:150%;color:#9370DB">
+	      Convex Schmonvex.
 	    </blockquote>
-	    -Yann LeCunn
+	    —Yann LeCun
 	  </div>
 	  <aside class="notes">Have you tried acoustic modeling in speech with a convex loss?</aside>
 	</section>
@@ -145,16 +149,13 @@
 	  <img src="images/cat_raising_hand.jpg">
 	  <p style="font-size:small;text-align:center">
 	    Source: https://c2.staticflickr.com/2/1162/1415120191_2aef20cb08_b.jpg</p>
-	  <h2 style="color:violet">@dianam</h2>
-	</section>
-	
-	<section data-background="#9370DB">
-	  <h2 style="color:white">Questions?</h2>
-	  <br>
-	  <h3 style="color:white">/ @dianam</h3>
+	  <h2 style="color:#9370DB">@dianam</h2>
 	</section>
 
-		<section>
+	<section>
+	</section>
+	
+	<section>
 	  <p>P=NP: millenium problem. Traveling Salesperson problem. Maybe: even or odd number of edges</p>
 	  <p>How does this relate to machine learning?</p>
 	  <p>Have you ever wondered by machine learning algorithms are structured the way they are?</p>
@@ -166,10 +167,6 @@
 	  <p>But in optimization, we tackle non-convex problems all the time! How does the UPS delivery person deliver packages in a reasonable manner? UPS solves a huge version of TSP! They know how close to opimal they are</p>
 	  <p>Deep learning involves a non-convex loss. Yann LaCunn quote about loss.<p>
 	  <p>Feature selection is non-convex<p>
-	</section>
-
-	<section>
-	  <p>TODO: read deep learning section in Seb R book.</p>
 	</section>
 
       </div>
