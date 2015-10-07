@@ -74,8 +74,9 @@
 	</section>
 
 	<section>
-	  <h2>Linear Regression</h2>
+	  <h2 style="color:#9370DB">Linear Regression</h2>
 	  <img class="stretch" src="images/cat_regression2.jpg">
+	  <p class="fragment" style="text-align:center">Squared loss: $(y - \hat{y})^2$</p>
 	  <aside class="notes">
 	    <p>Have you ever wondered why machine learning algorithms are structured the way they are?</p>
 	    <p>Take regression. To do a regression we solve an optimization problem: find the line that fits the data points the best. "fits" is the sum of squared error costs.</p>
@@ -88,17 +89,21 @@
 	</section>
 
 	<section>
-	  <h2>Support Vector Machine</h2>
+	  <h3>Support Vector Machine</h3>
 	  <img class="stretch" src="images/svm_example.jpg">
+	  <div class="fragment" style="padding-left: 7em;font-size:80%">
+	    <p style="text-align:left">$\max c $</p>
+	    <p>s.t. $\| \beta \| = 1$ and $\:y_i (\beta^T x_i) \geq c \:\: i=1,\ldots,n$</p>
+	  </div>
 	</section>
 
 	<section>
-	  <h2>Support Vector Machine</h2>
-	  Problem setup
-	</section>
-
-	<section>
-	  <h2>Logistic Regression</h2>
+	  <h3>Logistic Regression</h3>
+	  <img class="stretch" src="images/logistic_regression.jpg">
+	  <div style="padding-left:7em">
+	    <p class="fragment">$\min_{\beta}\sum_i \text{Loss}_{0/1}(\beta^Tx_i)$</p>
+	    <p class="fragment" style="color:#9370DB">$\min_{\beta}\sum_i \text{Loss}_{\text{logistic}} (\beta^Tx_i) $</p>
+	  </div>
 	</section>
 
 	<section>
@@ -123,15 +128,15 @@
 	</section>
 
 	<section>
-	  <div>
+	  <div>	    
 	    <blockquote style="font-size:150%;color:#9370DB">
-	      To solve complicated AI tasks, machine learning will have to go non-convex.
+	      Convex Schmonvex.
 	    </blockquote>
 	    —Yann LeCun
 	  </div>
 	  <div class="fragment">
 	    <blockquote style="font-size:150%;color:#9370DB">
-	      Convex Schmonvex.
+	      To solve complicated AI tasks, machine learning will have to go non-convex.
 	    </blockquote>
 	    —Yann LeCun
 	  </div>
