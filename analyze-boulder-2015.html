@@ -46,6 +46,7 @@
 	  <br>
 	  <h3 style="color:white">Diana Pfeil / @dianam</h3>
 	  <h3 style="color:white">Analyze Boulder, October 2015</h3>
+	  <aside class="notes">Love data, first and foremost an optimization fanatic</aside>
 	</section>
 
 	<section>
@@ -55,22 +56,33 @@
 	    <p style="font-size:150%">minimize cost</p>
 	    <p style="font-size:150%">subject to constraints</p>
 	  </div>
+	  <aside class="notes">What is optimization?</aside>
 	</section>
 
 	<section>
-	  <h2>Traveling Salesman Problem</h2>
+	  <h2>Traveling Salesperson Problem</h2>
 	  <img src="images/us_capitals.jpg">
-	  <aside class="notes">Who is familiar with the TSP? Is this an easy problem to solve? This very natural problem is computationally intractable. This is an optimization problem, broadly: trying to minimize a cost subject to constraints.</aside>
+	  <aside class="notes">Who is familiar with the TSP? Is this an easy problem to solve? This very natural problem is computationally intractable. aka you may as well solve by brute force</aside>
 	</section>
 
 	<section data-background="#9370DB">
-	  <h1 style="color:white">P = NP?</h1>
+	  <h1 style="color:white">P ≟ NP</h1>
 	  <aside class="notes">Intractable...unless P=NP. Biggest open problem in computer science</aside>
 	</section>
 
 	<section>
+	  <h2>Convex Optimization</h2>
+	  <img src="images/convex_opt.jpg">
+	</section>
+
+	<section>
+	  <h2>Non-Convex Optimization</h2>
+	  <img src="images/convex_not_opt.jpg">
+	</section>
+
+	<section>
 	  <h1 style="color:#9370DB">Back to Data</h1>
-	  <aside class="notes">How does this relate to machine learning?</aside>
+	  <aside class="notes"> <p>Have you ever wondered why machine learning algorithms are structured the way they are?</p></aside>
 	</section>
 
 	<section>
@@ -78,7 +90,6 @@
 	  <img class="stretch" src="images/cat_regression2.jpg">
 	  <p class="fragment" style="text-align:center">Squared loss: $(y - \hat{y})^2$</p>
 	  <aside class="notes">
-	    <p>Have you ever wondered why machine learning algorithms are structured the way they are?</p>
 	    <p>Take regression. To do a regression we solve an optimization problem: find the line that fits the data points the best. "fits" is the sum of squared error costs.</p>
 	  </aside>
 	</section>
@@ -100,9 +111,9 @@
 	<section>
 	  <h3>Logistic Regression</h3>
 	  <img class="stretch" src="images/logistic_regression.jpg">
-	  <div style="padding-left:7em">
-	    <p class="fragment">$\min_{\beta}\sum_i \text{Loss}_{0/1}(\beta^Tx_i)$</p>
-	    <p class="fragment" style="color:#9370DB">$\min_{\beta}\sum_i \text{Loss}_{\text{logistic}} (\beta^Tx_i) $</p>
+	  <div style="padding-left:10em;font-size:80%">
+	    <p class="fragment">$\min_{\beta}\sum_i \text{Loss}_{0/1}(y_i \beta^Tx_i)$</p>
+	    <p class="fragment" style="color:#9370DB">$\min_{\beta}\sum_i \text{Loss}_{\text{logistic}} (y_i \beta^Tx_i) $</p>
 	  </div>
 	</section>
 
@@ -146,8 +157,12 @@
 	<section>
 	  <h2 style="text-align:left">Speech Recognition</h2>
 	  <h2 style="text-align:left">Handwriting Recognition</h2>
-	  <h2 style="text-align:left">Computer Vision / Cat Videos</h2>
+	  <h2 style="text-align:left">Computer Vision</h2>
 	  <aside class="notes">HMMs and Deep learning</aside>
+	</section>
+
+	<section>
+	  <h2 style="color:#9370DB">Intractable ≠ Useless</h2>
 	</section>
 
 	<section>
